@@ -17,13 +17,26 @@
             <!--  <h1>PHP Dischi JSON</h1> -->
         </header>
         <main>
-            <div class="album" v-for="album in albums">
+            <div class="album" v-for="album in albums" @click="detailsAlbum(album)">
                 <img :src="album.poster" alt="Poster">
                 <div class="album_details">
                     <h2> {{album.title }} </h2>
                     <p> {{ album.author }} </p>
                     <p> {{ album.year }} </p>
                     <!--  <p> {{ album.genre }} </p> -->
+                </div>
+            </div>
+            <!-- mostriamo i dati del solo disco clickato -->
+            <div class="details_disc" v-if="selectedAlbum">
+                <div class="selected_album">
+                    <button @click="closeDetails" class="hide_details">✖️</button>
+                    <img :src="selectedAlbum.poster" alt="Poster">
+                </div>
+                <div class="album_details">
+                    <h2> {{selectedAlbum.title }} </h2>
+                    <p> {{ selectedAlbum.author }} </p>
+                    <p> {{ selectedAlbum.year }} </p>
+                    <p> {{ selectedAlbum.genre }} </p>
                 </div>
             </div>
         </main>

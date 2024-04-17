@@ -4,10 +4,21 @@ createApp({
 
         return {
             albums: [],
+            //impostiamo su null una variabile per il disco clickato
+            selectedAlbum: null,
         }
     },
     methods: {
+        //facciamo una funzione che terra traccia del disco clickato
+        detailsAlbum(album) {
+            this.selectedAlbum = album;
 
+        },
+
+        //chiude la schermata del disco selezionato
+        closeDetails() {
+            this.selectedAlbum = null;
+        }
 
     },
     mounted() {

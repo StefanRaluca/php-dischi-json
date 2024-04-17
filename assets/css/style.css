@@ -34,7 +34,7 @@ main {
     background: #112030;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     max-width: 300px;
-
+    cursor: pointer;
 
     img {
         max-width: 100%;
@@ -42,6 +42,41 @@ main {
         border-radius: 5px;
     }
 }
+
+.details_disc {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background-color: #1d2d3cc9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+
+}
+
+.selected_album {
+    max-width: 80%;
+    padding: 20px;
+
+
+}
+
+.hide_details {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    color: #fff;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
 
 .album_details {
     text-align: center;
