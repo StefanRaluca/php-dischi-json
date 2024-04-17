@@ -12,7 +12,9 @@
 <body>
     <div id='app'>
         <header>
-            <h1>PHP Dischi JSON</h1>
+            <img src="https://cantabrialabsdifacooper.it/wp-content/uploads/2021/03/png-clipart-spotify-logo-spotify-computer-icons-podcast-music-apps-miscellaneous-angle-1-e1614848134495.png"
+                alt="">
+            <!--  <h1>PHP Dischi JSON</h1> -->
         </header>
         <main>
             <div class="album" v-for="album in albums">
@@ -21,7 +23,7 @@
                     <h2> {{album.title }} </h2>
                     <p> {{ album.author }} </p>
                     <p> {{ album.year }} </p>
-                    <p> {{ album.genre }} </p>
+                    <!--  <p> {{ album.genre }} </p> -->
                 </div>
             </div>
         </main>

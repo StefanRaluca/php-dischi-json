@@ -3,11 +3,58 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: #1D2D3C;
 }
 
 header {
-    background-color: #333;
+    background: #06131F;
     color: #fff;
-    padding: 20px;
+    padding: 10px;
     text-align: center;
+    display: flex;
+
+    img {
+        width: 50px;
+        margin-left: 5px;
+    }
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.album {
+    margin: 20px;
+    padding: 20px;
+    color: #fff;
+    border-radius: 5px;
+    background: #112030;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+
+
+    img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 5px;
+    }
+}
+
+.album_details {
+    text-align: center;
+
+
+    h2 {
+        margin-top: 10px;
+        margin-bottom: 5px;
+        font-size: 20px;
+    }
+
+    p {
+        margin: 10px;
+
+    }
 }
